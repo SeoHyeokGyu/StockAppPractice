@@ -20,6 +20,7 @@
 		464E76D82696D13E00BCA22C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76D72696D13E00BCA22C /* Coordinator.swift */; };
 		464E76DA2696D2F300BCA22C /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76D92696D2F300BCA22C /* CompositionRoot.swift */; };
 		464E76DC2696DB9A00BCA22C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76DB2696DB9A00BCA22C /* MainCoordinator.swift */; };
+		466039452698727C00338999 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466039442698727C00338999 /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		464E76D72696D13E00BCA22C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		464E76D92696D2F300BCA22C /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
 		464E76DB2696DB9A00BCA22C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		466039442698727C00338999 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Stock.swift; path = StockAppPractice/Controller/Stock.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		464E76CB2696C08600BCA22C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				466039442698727C00338999 /* Stock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				464E76DA2696D2F300BCA22C /* CompositionRoot.swift in Sources */,
 				464E76D22696C1A300BCA22C /* StockListController.swift in Sources */,
+				466039452698727C00338999 /* Stock.swift in Sources */,
 				464E76D02696C0BD00BCA22C /* BaseViewController.swift in Sources */,
 				464E76D42696C1D700BCA22C /* BaseView.swift in Sources */,
 				46320B2626980955005C4147 /* StockRepository.swift in Sources */,
