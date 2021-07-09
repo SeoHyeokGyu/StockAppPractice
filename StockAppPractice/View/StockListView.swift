@@ -15,6 +15,14 @@ class StockListView: BaseView{
         return view
     }()
     
+    let searchViewController: UISearchController = {
+       let view = UISearchController(searchResultsController: nil)
+        view.searchBar.placeholder="Enter a compant name or symbol"
+        view.obscuresBackgroundDuringPresentation = false
+        
+        return view
+    }()
+    
     override func configureUI() {
         addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
