@@ -5,8 +5,9 @@
 //  Created by 서혁규 on 2021/07/09.
 //
 
+import Combine
+
 protocol StockRepository {
-    var apiKey:String { get set }
-    
+    func fetchStockPublisher(keywords: String) -> AnyPublisher<StockResult, Error>
 }
 
