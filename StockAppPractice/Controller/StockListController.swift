@@ -5,6 +5,8 @@
 //  Created by 서혁규 on 2021/07/08.
 //
 
+import RxSwift
+import RxCocoa
 import UIKit
 import Pure
 
@@ -40,7 +42,7 @@ class StockListController: BaseViewConroller, FactoryModule{
         selfView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         selfView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         selfView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-     
+        
         
         selfView.searchViewController.delegate = self
         selfView.searchViewController.searchResultsUpdater = self
@@ -48,20 +50,26 @@ class StockListController: BaseViewConroller, FactoryModule{
     }
     
     func bind(){
+        
+        selfView.searchViewController.searchBar.rx.text.debounce(.milliseconds(300), scheduler: MainScheduler.instance).subscribe(onNext: { [unowned self] text in
+            guard let text = text, !text.isEmpty else { return }
+            self.viewModel.searchQueryChanged(query: text)
+        })
+        
         viewModel.$errorMessage.sink{ errorMessage in
             guard let message = errorMessage, !message.isEmpty else { return }
-                print("message: \(message)")
+            print("message: \(message)")
         }.store(in: &subscriber)
         
         
-            viewModel.$stocks.sink{ stocks in
-                    print("stocks: \(stocks)")
-            }.store(in: &subscriber)
+        viewModel.$stocks.sink{ stocks in
+            print("stocks: \(stocks)")
+        }.store(in: &subscriber)
         
-            viewModel.$loading.sink{ loading in
-                    print("loading: \(loading)")
-            }.store(in: &subscriber)
-        }
+        viewModel.$loading.sink{ loading in
+            print("loading: \(loading)")
+        }.store(in: &subscriber)
+    }
     
     
 }
