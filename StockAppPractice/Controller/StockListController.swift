@@ -20,15 +20,22 @@ class StockListController: BaseViewConroller, FactoryModule{
         viewModel = dependency.viewModel
         super.init(nibName: nil, bundle: nil)
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
-        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        enableScrollWhenKeuboardAppeared(scrollView: selfView.tableView)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        removeListeners()
+    }
     
     
     let selfView = StockListView()
@@ -44,9 +51,8 @@ class StockListController: BaseViewConroller, FactoryModule{
         selfView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         selfView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-        
-        selfView.searchViewController.delegate = self
-        selfView.searchViewController.searchResultsUpdater = self
+        selfView.tableView.delegate = self
+        selfView.tableView.dataSource = self
         navigationItem.searchController = selfView.searchViewController
     }
     
@@ -64,12 +70,11 @@ class StockListController: BaseViewConroller, FactoryModule{
         
         
         viewModel.$stocks.sink{ stocks in
-            print("stocks: \(stocks)")
+            self.selfView.tableView.reloadData()
         }.store(in: &subscriber)
         
         viewModel.$loading.sink{ [unowned self] loading in
             self.selfView.loadingView.isHidden = !loading
-            print("loading: \(loading)")
         }.store(in: &subscriber)
     }
     
