@@ -7,10 +7,12 @@
 // 코드의 중복을 방지하기 위함
 import UIKit
 import RxSwift
+import Combine
 
 class BaseViewConroller: UIViewController{
     
     let disposeBag = DisposeBag()
+    var subscriber: Set<AnyCancellable> = .init()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?){
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

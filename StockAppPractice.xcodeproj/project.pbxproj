@@ -165,8 +165,7 @@
 			children = (
 				46C13D40269880A0002557FE /* Stock.swift */,
 			);
-			name = Model;
-			path = ../../../../Desktop/Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7C23AD2B6F44D909F0F1F879 /* Pods */ = {

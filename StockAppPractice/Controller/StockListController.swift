@@ -24,7 +24,7 @@ class StockListController: BaseViewConroller, FactoryModule{
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
-        viewModel.viewDidLoad()
+        
     }
     
     
@@ -48,22 +48,20 @@ class StockListController: BaseViewConroller, FactoryModule{
     }
     
     func bind(){
+        viewModel.$errorMessage.sink{ errorMessage in
+            guard let message = errorMessage, !message.isEmpty else { return }
+                print("message: \(message)")
+        }.store(in: &subscriber)
         
-        viewModel.loading.subscribe(onNext: { loading in
-            print("loading: \(loading)")
-        }).disposed(by: disposeBag)
         
-        viewModel.errorMessage.subscribe(onNext:{ error in
-            guard let error = error else { return }
-            print("error: \(error)")
-            
-        }).disposed(by: disposeBag)
+            viewModel.$stocks.sink{ stocks in
+                    print("stocks: \(stocks)")
+            }.store(in: &subscriber)
         
-        viewModel.stocks.subscribe(onNext:{ stocks in
-            print("stocks: \(stocks)")
-        }).disposed(by: disposeBag)
-        
-    }
+            viewModel.$loading.sink{ loading in
+                    print("loading: \(loading)")
+            }.store(in: &subscriber)
+        }
     
     
 }
