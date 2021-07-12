@@ -20,6 +20,7 @@
 		464E76D82696D13E00BCA22C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76D72696D13E00BCA22C /* Coordinator.swift */; };
 		464E76DA2696D2F300BCA22C /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76D92696D2F300BCA22C /* CompositionRoot.swift */; };
 		464E76DC2696DB9A00BCA22C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76DB2696DB9A00BCA22C /* MainCoordinator.swift */; };
+		464EBC1B269C200500B7A05B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EBC1A269C200500B7A05B /* LoadingView.swift */; };
 		46C13D41269880A0002557FE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D40269880A0002557FE /* Stock.swift */; };
 		46C13D43269880DD002557FE /* StockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D42269880DD002557FE /* StockUseCase.swift */; };
 		46C13D4526988147002557FE /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D4426988147002557FE /* StockListViewModel.swift */; };
@@ -43,6 +44,7 @@
 		464E76D72696D13E00BCA22C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		464E76D92696D2F300BCA22C /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
 		464E76DB2696DB9A00BCA22C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		464EBC1A269C200500B7A05B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		46C13D40269880A0002557FE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		46C13D42269880DD002557FE /* StockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockUseCase.swift; path = ../../../../../Desktop/StockUseCase.swift; sourceTree = "<group>"; };
 		46C13D4426988147002557FE /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		464E76CC2696C08D00BCA22C /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				464EBC1A269C200500B7A05B /* LoadingView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				464E76D42696C1D700BCA22C /* BaseView.swift in Sources */,
 				46320B2626980955005C4147 /* StockRepository.swift in Sources */,
 				46320B282698098D005C4147 /* StockRepositoryImpl.swift in Sources */,
+				464EBC1B269C200500B7A05B /* LoadingView.swift in Sources */,
 				464E76DC2696DB9A00BCA22C /* MainCoordinator.swift in Sources */,
 				464E76D62696C28600BCA22C /* StockListView.swift in Sources */,
 				464E76B42696C01F00BCA22C /* AppDelegate.swift in Sources */,

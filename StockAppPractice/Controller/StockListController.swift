@@ -34,6 +34,7 @@ class StockListController: BaseViewConroller, FactoryModule{
     let selfView = StockListView()
     let viewModel: StockListViewModel
     
+    
     override func configureUI() {
         view.addSubview(selfView)
         
@@ -66,7 +67,8 @@ class StockListController: BaseViewConroller, FactoryModule{
             print("stocks: \(stocks)")
         }.store(in: &subscriber)
         
-        viewModel.$loading.sink{ loading in
+        viewModel.$loading.sink{ [unowned self] loading in
+            self.selfView.loadingView.isHidden = !loading
             print("loading: \(loading)")
         }.store(in: &subscriber)
     }
