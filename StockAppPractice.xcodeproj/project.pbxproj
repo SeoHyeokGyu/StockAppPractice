@@ -24,6 +24,7 @@
 		464EBC1D269C271500B7A05B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EBC1C269C271500B7A05B /* Font.swift */; };
 		464EBC1F269C299200B7A05B /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EBC1E269C299200B7A05B /* StockCell.swift */; };
 		464EBC21269C311000B7A05B /* StockListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EBC20269C311000B7A05B /* StockListTableView.swift */; };
+		4664E53A269D5EE10067BEAA /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E539269D5EE10067BEAA /* EmptyView.swift */; };
 		46C13D41269880A0002557FE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D40269880A0002557FE /* Stock.swift */; };
 		46C13D43269880DD002557FE /* StockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D42269880DD002557FE /* StockUseCase.swift */; };
 		46C13D4526988147002557FE /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D4426988147002557FE /* StockListViewModel.swift */; };
@@ -51,8 +52,9 @@
 		464EBC1C269C271500B7A05B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		464EBC1E269C299200B7A05B /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		464EBC20269C311000B7A05B /* StockListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListTableView.swift; sourceTree = "<group>"; };
+		4664E539269D5EE10067BEAA /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		46C13D40269880A0002557FE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
-		46C13D42269880DD002557FE /* StockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockUseCase.swift; path = ../../../../../Desktop/StockUseCase.swift; sourceTree = "<group>"; };
+		46C13D42269880DD002557FE /* StockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockUseCase.swift; sourceTree = "<group>"; };
 		46C13D4426988147002557FE /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		5F672DD45DDD68AA53B762C8 /* Pods_StockAppPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockAppPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5F23E219FE2558C47D4289 /* Pods-StockAppPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockAppPractice.release.xcconfig"; path = "Target Support Files/Pods-StockAppPractice/Pods-StockAppPractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				464E76D32696C1D700BCA22C /* BaseView.swift */,
 				464E76D52696C28600BCA22C /* StockListView.swift */,
 				464EBC1E269C299200B7A05B /* StockCell.swift */,
+				4664E539269D5EE10067BEAA /* EmptyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				464E76D22696C1A300BCA22C /* StockListController.swift in Sources */,
 				46C13D41269880A0002557FE /* Stock.swift in Sources */,
 				464EBC1F269C299200B7A05B /* StockCell.swift in Sources */,
+				4664E53A269D5EE10067BEAA /* EmptyView.swift in Sources */,
 				464E76D02696C0BD00BCA22C /* BaseViewController.swift in Sources */,
 				464E76D42696C1D700BCA22C /* BaseView.swift in Sources */,
 				46320B2626980955005C4147 /* StockRepository.swift in Sources */,
