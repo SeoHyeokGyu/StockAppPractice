@@ -40,7 +40,7 @@ class StockListController: BaseViewConroller, FactoryModule{
     
     let selfView = StockListView()
     let viewModel: StockListViewModel
-    
+    var coordinator: MainCoordinator?
     
     override func configureUI() {
         view.addSubview(selfView)
