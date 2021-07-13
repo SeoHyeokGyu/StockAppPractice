@@ -26,6 +26,7 @@
 		464EBC21269C311000B7A05B /* StockListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EBC20269C311000B7A05B /* StockListTableView.swift */; };
 		4664E53A269D5EE10067BEAA /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E539269D5EE10067BEAA /* EmptyView.swift */; };
 		4664E53C269D64730067BEAA /* StockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E53B269D64730067BEAA /* StockDetailController.swift */; };
+		4664E53E269D84010067BEAA /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E53D269D84010067BEAA /* StockDetailView.swift */; };
 		46C13D41269880A0002557FE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D40269880A0002557FE /* Stock.swift */; };
 		46C13D43269880DD002557FE /* StockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D42269880DD002557FE /* StockUseCase.swift */; };
 		46C13D4526988147002557FE /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C13D4426988147002557FE /* StockListViewModel.swift */; };
@@ -55,6 +56,7 @@
 		464EBC20269C311000B7A05B /* StockListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListTableView.swift; sourceTree = "<group>"; };
 		4664E539269D5EE10067BEAA /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		4664E53B269D64730067BEAA /* StockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailController.swift; sourceTree = "<group>"; };
+		4664E53D269D84010067BEAA /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 		46C13D40269880A0002557FE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		46C13D42269880DD002557FE /* StockUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockUseCase.swift; sourceTree = "<group>"; };
 		46C13D4426988147002557FE /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				464E76D52696C28600BCA22C /* StockListView.swift */,
 				464EBC1E269C299200B7A05B /* StockCell.swift */,
 				4664E539269D5EE10067BEAA /* EmptyView.swift */,
+				4664E53D269D84010067BEAA /* StockDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				464EBC1F269C299200B7A05B /* StockCell.swift in Sources */,
 				4664E53C269D64730067BEAA /* StockDetailController.swift in Sources */,
 				4664E53A269D5EE10067BEAA /* EmptyView.swift in Sources */,
+				4664E53E269D84010067BEAA /* StockDetailView.swift in Sources */,
 				464E76D02696C0BD00BCA22C /* BaseViewController.swift in Sources */,
 				464E76D42696C1D700BCA22C /* BaseView.swift in Sources */,
 				46320B2626980955005C4147 /* StockRepository.swift in Sources */,
