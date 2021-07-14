@@ -28,6 +28,14 @@ class StockDetailController: BaseViewConroller, FactoryModule{
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        enableScrollWhenKeuboardAppeared(scrollView: selfView.scrollView)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        removeListeners()
+    }
+    
     override func configureUI() {
         view.backgroundColor = .systemBackground
         title = "Detail"
