@@ -9,11 +9,6 @@ import Combine
 
 class SrockRepositoryImpl:StockRepository{
     
-    enum StockRepositoryError: Error {
-        case encoding
-        case bad_url
-    }
-    
     let decoder = JSONDecoder()
     var apiKey: String = "6VWET1UP1DJVXFCH"
     
@@ -64,7 +59,7 @@ class SrockRepositoryImpl:StockRepository{
         if let url = URL(string: urlString) {
             return .success(url)
         } else {
-            let error: StockRepositoryError = .bad_url
+            let error: MyError = .badUrl
             return .failure(error)
         }
     }
@@ -73,7 +68,7 @@ class SrockRepositoryImpl:StockRepository{
         if let query = text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed){
             return .success(query)
         } else{
-            let error: StockRepositoryError = .encoding
+            let error: MyError = .encoding
             return .failure(error)
         }
     }
