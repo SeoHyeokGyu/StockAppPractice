@@ -7,8 +7,8 @@
 import Foundation
 import Combine
 
-class SrockRepositoryImpl:StockRepository{
-    
+class SrockRepositoryImpl: StockRepository{
+
     let decoder = JSONDecoder()
     var apiKey: String = "6VWET1UP1DJVXFCH"
     
@@ -34,7 +34,7 @@ class SrockRepositoryImpl:StockRepository{
         
     }
     
-    func fetchTimeSeriesSeriesPublisher(keywords: String) -> AnyPublisher<TimeSeriesMonthlyAdjusted, Error>{
+    func fetchTimeSeriesPublisher(keywords: String) -> AnyPublisher<TimeSeriesMonthlyAdjusted, Error>{
         
         let queryResult = parseQueryString(text: keywords)
         var query = ""
