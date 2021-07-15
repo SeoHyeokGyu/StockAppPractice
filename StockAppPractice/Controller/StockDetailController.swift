@@ -59,10 +59,8 @@ class StockDetailController: BaseViewConroller, FactoryModule{
     }
     
     func bind(){
-        
-        viewModel.$timeSeriseMonthlyAdjusted.sink{ timeSeriesMonthlyAdjusted in
-            guard let timeSeriesMonthlyAdjusted = timeSeriesMonthlyAdjusted else {return}
-            print("timeSeriesMonthlyAdjusted: \(timeSeriesMonthlyAdjusted)")
+        viewModel.$monthInfos.sink { monthInfos in
+            print("monthInfos: \(monthInfos)")
         }.store(in: &subscriber)
         
         

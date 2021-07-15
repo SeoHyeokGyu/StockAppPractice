@@ -31,6 +31,7 @@
 		4662BD64269FF5A800032689 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662BD63269FF5A800032689 /* ErrorDescription.swift */; };
 		4662BD66269FF9C900032689 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662BD65269FF9C900032689 /* BaseViewModel.swift */; };
 		4662BD68269FFCF400032689 /* StockDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662BD67269FFCF400032689 /* StockDetailUseCase.swift */; };
+		4662BD6A26A027CA00032689 /* MonthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662BD6926A027CA00032689 /* MonthInfo.swift */; };
 		4664E53A269D5EE10067BEAA /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E539269D5EE10067BEAA /* EmptyView.swift */; };
 		4664E53C269D64730067BEAA /* StockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E53B269D64730067BEAA /* StockDetailController.swift */; };
 		4664E53E269D84010067BEAA /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E53D269D84010067BEAA /* StockDetailView.swift */; };
@@ -68,6 +69,7 @@
 		4662BD63269FF5A800032689 /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
 		4662BD65269FF9C900032689 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		4662BD67269FFCF400032689 /* StockDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailUseCase.swift; sourceTree = "<group>"; };
+		4662BD6926A027CA00032689 /* MonthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthInfo.swift; sourceTree = "<group>"; };
 		4664E539269D5EE10067BEAA /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		4664E53B269D64730067BEAA /* StockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailController.swift; sourceTree = "<group>"; };
 		4664E53D269D84010067BEAA /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			children = (
 				46C13D40269880A0002557FE /* Stock.swift */,
 				4653746E269F009500EAC1E9 /* TimeSeriesMonthlyAdjusted.swift */,
+				4662BD6926A027CA00032689 /* MonthInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				464EBC1D269C271500B7A05B /* Font.swift in Sources */,
 				464E76B62696C01F00BCA22C /* SceneDelegate.swift in Sources */,
 				4653746D269EC85A00EAC1E9 /* StockDetailBottomView.swift in Sources */,
+				4662BD6A26A027CA00032689 /* MonthInfo.swift in Sources */,
 				46C13D43269880DD002557FE /* StockUseCase.swift in Sources */,
 				464E76D82696D13E00BCA22C /* Coordinator.swift in Sources */,
 				4662BD68269FFCF400032689 /* StockDetailUseCase.swift in Sources */,
