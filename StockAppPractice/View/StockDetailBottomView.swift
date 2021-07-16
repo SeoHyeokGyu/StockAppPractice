@@ -46,6 +46,13 @@ class StockDetailBottomView: BaseView{
         slider.rightAnchor.constraint(equalTo: rightAnchor, constant: -16).isActive = true
         slider.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
     }
+    
+    func configureUI(currency: String){
+        investmentInputView.valueLabel.text = "(\(currency))"
+        costInputView.valueLabel.text = "(\(currency))"
+        dateInputView.valueLabel.text = "(\(currency))"
+
+    }
     class InputView: BaseView{
         let textField = UITextField()
         let descriptionLabel = SmallLabel()

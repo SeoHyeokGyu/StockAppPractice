@@ -42,6 +42,9 @@ class StockDetailController: BaseViewConroller, FactoryModule{
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.viewDidLoad(symbol: stock.symbol ?? "", stock: stock)
+        if let currency = stock.currency {
+            self.selfView.bottomView.configureUI(currency: currency)
+        }
         bind()
     }
     
