@@ -19,6 +19,7 @@ class StockDetailController: BaseViewConroller, FactoryModule{
     let viewModel: StockDetailViewModel
     
     let stock: Stock
+    var coordinator: MainCoordinator?
     
     required init(dependency: Dependency, payload: ()) {
         stock = dependency.stock
@@ -58,6 +59,7 @@ class StockDetailController: BaseViewConroller, FactoryModule{
         selfView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         selfView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         selfView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        selfView.bottomView.dateInputView.textField.delegate = self
 
     }
     
@@ -81,5 +83,17 @@ class StockDetailController: BaseViewConroller, FactoryModule{
         viewModel.$loading.sink { loading in
             self.selfView.loadingView.isHidden = !loading
         }.store(in: &subscriber)
+    }
+}
+
+extension StockDetailController: UITextFieldDelegate{
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        if textField == selfView.bottomView.dateInputView.textField {
+            coordinator?.dateInputTextFieldTapped()
+            
+            return false
+        }
+        return true
     }
 }

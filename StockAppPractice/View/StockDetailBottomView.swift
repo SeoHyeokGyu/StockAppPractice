@@ -32,10 +32,15 @@ class StockDetailBottomView: BaseView{
         investmentInputView.topAnchor.constraint(equalTo: topAnchor, constant: 8).isActive = true
         investmentInputView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
         investmentInputView.rightAnchor.constraint(equalTo: rightAnchor, constant: -16).isActive = true
+        investmentInputView.textField.keyboardType = .numberPad
+        investmentInputView.textField.addDoneButton()
         
         costInputView.topAnchor.constraint(equalTo: investmentInputView.bottomAnchor, constant: 8).isActive = true
         costInputView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
         costInputView.rightAnchor.constraint(equalTo: rightAnchor, constant: -16).isActive = true
+        costInputView.textField.keyboardType = .numberPad
+        costInputView.textField.addDoneButton()
+
         
         dateInputView.topAnchor.constraint(equalTo: costInputView.bottomAnchor, constant: 8).isActive = true
         dateInputView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true

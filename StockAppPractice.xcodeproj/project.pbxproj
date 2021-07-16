@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		46320B2626980955005C4147 /* StockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46320B2526980955005C4147 /* StockRepository.swift */; };
 		46320B282698098D005C4147 /* StockRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46320B272698098D005C4147 /* StockRepositoryImpl.swift */; };
+		4641C35826A178C400FC2877 /* TextFieldExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641C35726A178C400FC2877 /* TextFieldExtentions.swift */; };
+		4641C35A26A17CB900FC2877 /* SelectDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4641C35926A17CB900FC2877 /* SelectDateController.swift */; };
 		464E76B42696C01F00BCA22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76B32696C01F00BCA22C /* AppDelegate.swift */; };
 		464E76B62696C01F00BCA22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E76B52696C01F00BCA22C /* SceneDelegate.swift */; };
 		464E76BD2696C02000BCA22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464E76BC2696C02000BCA22C /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		20FEDE57BBB081C0A581988B /* Pods-StockAppPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockAppPractice.debug.xcconfig"; path = "Target Support Files/Pods-StockAppPractice/Pods-StockAppPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		46320B2526980955005C4147 /* StockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRepository.swift; sourceTree = "<group>"; };
 		46320B272698098D005C4147 /* StockRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRepositoryImpl.swift; sourceTree = "<group>"; };
+		4641C35726A178C400FC2877 /* TextFieldExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtentions.swift; sourceTree = "<group>"; };
+		4641C35926A17CB900FC2877 /* SelectDateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateController.swift; sourceTree = "<group>"; };
 		464E76B02696C01F00BCA22C /* StockAppPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockAppPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		464E76B32696C01F00BCA22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		464E76B52696C01F00BCA22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				4664E53B269D64730067BEAA /* StockDetailController.swift */,
 				4662BD60269FF43700032689 /* StockDetailViewModel.swift */,
 				4662BD65269FF9C900032689 /* BaseViewModel.swift */,
+				4641C35926A17CB900FC2877 /* SelectDateController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				4662BD63269FF5A800032689 /* ErrorDescription.swift */,
+				4641C35726A178C400FC2877 /* TextFieldExtentions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				464E76DA2696D2F300BCA22C /* CompositionRoot.swift in Sources */,
 				46C13D4526988147002557FE /* StockListViewModel.swift in Sources */,
 				464E76D22696C1A300BCA22C /* StockListController.swift in Sources */,
+				4641C35826A178C400FC2877 /* TextFieldExtentions.swift in Sources */,
 				46C13D41269880A0002557FE /* Stock.swift in Sources */,
 				4662BD66269FF9C900032689 /* BaseViewModel.swift in Sources */,
 				464EBC1F269C299200B7A05B /* StockCell.swift in Sources */,
@@ -366,6 +373,7 @@
 				464E76D42696C1D700BCA22C /* BaseView.swift in Sources */,
 				4653746F269F009500EAC1E9 /* TimeSeriesMonthlyAdjusted.swift in Sources */,
 				46320B2626980955005C4147 /* StockRepository.swift in Sources */,
+				4641C35A26A17CB900FC2877 /* SelectDateController.swift in Sources */,
 				46320B282698098D005C4147 /* StockRepositoryImpl.swift in Sources */,
 				464EBC1B269C200500B7A05B /* LoadingView.swift in Sources */,
 				464EBC21269C311000B7A05B /* StockListTableView.swift in Sources */,
