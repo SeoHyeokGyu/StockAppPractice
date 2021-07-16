@@ -41,7 +41,7 @@ class StockDetailController: BaseViewConroller, FactoryModule{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.viewDidLoad(symbol: stock.symbol ?? "")
+        viewModel.viewDidLoad(symbol: stock.symbol ?? "", stock: stock)
         bind()
     }
     
@@ -62,7 +62,12 @@ class StockDetailController: BaseViewConroller, FactoryModule{
         
         viewModel.$timeSeriseMonthlyAdjusted.sink { timeSeriseMonthlyAdjusted in
             guard let timeSeriseMonthlyAdjusted = timeSeriseMonthlyAdjusted else {return}
-            print("timeSeriseMonthlyAdjusted: \(timeSeriseMonthlyAdjusted.monthInfos)")
+            print("timeSeriseMonthlyAdjusted: \(timeSeriseMonthlyAdjusted)")
+        }.store(in: &subscriber)
+        
+        viewModel.$stock.sink { stock in
+            guard let stock = stock else { return }
+            self.selfView.topView.configureUI(stock: stock)
         }.store(in: &subscriber)
         
         viewModel.$errorMessage.sink { errorMessage in

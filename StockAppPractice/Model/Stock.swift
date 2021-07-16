@@ -26,7 +26,7 @@ struct Stock: Decodable {
         case symbol = "1. symbol"
         case name = "2. name"
         case type = "3. type"
-        case currency = "4. currency"
+        case currency = "8. currency"
 
     }
 }

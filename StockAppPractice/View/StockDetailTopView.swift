@@ -20,11 +20,15 @@ class StockDetailTopView: BaseView {
     let annualReturnLabel = SmallLabel()
     let annualReturnValueLabel = SmallBoldLabel()
     
+    func configureUI(stock: Stock){
+        titleLabel.text = stock.symbol
+        subTitleLabel.text = stock.name
+        currentValueTextLabel.text = "Current value (\(stock.currency ?? ""))"
+    }
+    
     override func configureUI() {
         
-        titleLabel.text = "SPY"
-        subTitleLabel.text = "SDSDSD"
-        currentValueValueLabel.text = "current value"
+        currentValueValueLabel.text = "5000"
         currentValueTextLabel.text = "current text"
         investmentLabel.text = "investment "
         investmentValueLabel.text = "investment value"
